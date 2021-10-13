@@ -1,0 +1,86 @@
+body {margin: 0 auto;}
+
+#header {
+    background-color: #1a2029;
+    height: 120px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    animation: fadeIn linear 2s;
+}
+
+.title {
+    color: #ffffff; 
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    animation: showBlock 0s 1s forwards;
+    visibility: hidden;
+    
+    }
+
+.title p {
+    animation-name: textzoom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.button {
+    display: inline;
+    float: right;
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition-duration: .3s;
+    animation: movingTopToBottom 2s linear;
+    animation-delay: 3s;
+    
+}
+
+.button:hover {
+    background-color:#B75CFF;
+}
+
+.hidebut { 
+    animation: showBlock 0s 3s forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.5, 1.5);}
+}
+
+@keyframes showBlock {
+    to { visibility: visible; }
+}
+
+@keyframes textzoom {
+    0% {font-size: 10px;}
+    100% {font-size: 28px;}
+}
+
+@keyframes movingTopToBottom {
+    0% {
+      top: -15px;
+    }
+   
+    100% {
+      top: 50%;
+    }
+  }

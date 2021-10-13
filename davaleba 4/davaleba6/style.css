@@ -1,0 +1,32 @@
+body { background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;}
+
+
+.container {margin: 0 auto; width: 1100px;}
+.header {display: flex; justify-content:center;  margin-top: 50px; border-bottom: 2px solid white;}
+.header a {padding: 0 0 20px 20px; font-size: 17px;}
+
+a, a:visited {color: #ffffff; text-decoration: none;}
+a:hover {color: #FFFF33;}
+a:active {color: #FFFF00;}
+
+.line {border-top: 2px solid white;}
+
+.content {margin-top: 120px;}
+h1 {font-size: 50px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(
+            45deg, #09009f, #00ff95 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    padding: 10px;
+    display: inline;}
+
+.textbg {background-color: #ffffff;     margin-left: auto; margin-right: auto; display: block; width: 285px;}
+.content p {text-align:center; text-transform: uppercase; color:#ffffff; text-shadow: 1px 1px #000000;} 
+.button {background-color: #ffc107; width: 100px; margin-left: auto; margin-right: auto; padding: 12px; margin-top: 60px; cursor: pointer; color:#ffffff;}
+.button:hover {background-color :#3fa112; transform:scale(1.1,1.1); -webkit-transform:scale(1.1,1.1); -moz-transform:scale(1.1,1.1);}
